@@ -1,0 +1,146 @@
+﻿@*@using Helper.Language;
+    @using Helper.TimeData;
+    @using WebCore.Services*@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title </title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="~/_themes/library/script/library.js"></script>
+    @Styles.Render("~/library/css")
+    @Styles.Render("~/fontend/css")
+    @Scripts.Render("~/library/jquery")
+    @RenderSection("styles", required: false)
+    @*@{
+            // Get language in client
+            string lgName = Helper.Language.LanguageCode.Vietnamese.Name;
+            string lgCode = Helper.Language.LanguageCode.Vietnamese.ID;
+            Helper.Security.Cookies.SetCookiForLanguage(lgName, lgCode);
+        }
+        @{
+            string currController = Helper.Page.MetaSEO.ControllerText;
+            string currAction = Helper.Page.MetaSEO.ActionText;
+            string userId = Helper.Current.UserLogin.IdentifierID;
+        }*@
+</head>
+<body class="dark-theme">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="centered">
+                <div class="blob-1"></div>
+                <div class="blob-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="showModalLive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="padding-top:15px; color:#000000" class="modal-title" id="modalLiveTitle">....</h4>
+                </div>
+                <div class="modal-body" style="background: url('/_themes/fontend/images/product/bg_popup.png'">
+                    <div class="form-group text-center" style="background:#ccc">
+                        <img id="modalLiveImage" style="margin:auto auto;" class="img-modal img-responsive" src="~/Files/default/00000000-0000-0000-0000-000000000000.gif" />
+                    </div>
+                    <div class="form-group" style="background: #FFF;padding: 15px;">
+                        <h4 class="modalLivePrice" style="color:#F00">Giá: <span id="modalLivePrice">....</span></h4>
+                        <p id="modalLiveSummary"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="col-md-6 col-md-offset-3">
+        <!-- Hero -->
+        <section id="hero" class="hero-style-3 d-flex" data-product="true" data-index="1">
+            <div class="cubes d-none d-xl-block">
+                <img class="cube-1" src="/_themes/fontend/images/index-data/hero/cube1.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
+                <img class="cube-2" src="/_themes/fontend/images/index-data/hero/cube2.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
+            </div>
+            <img src="~/_themes/fontend/images/product/banner-1.png" class="img-responsive" alt="Gà không lối thoát, 89 nguyễn khang !" />
+        </section>
+        @RenderBody()
+        <footer id="footer" class="mt-30">
+            <div class="row mb-30">
+                <div class="col-md-5 col-xs-5" data-aos="fade-left">
+                    <img src="~/_themes/fontend/images/product/_0008_tin-nhan.png" class="img-responsive" />
+                </div>
+                <div class="col-md-7 col-xs-7" data-aos="fade-right">
+                    <img src="~/_themes/fontend/images/product/_0007_so-dt.png" class="img-responsive" />
+                </div>
+            </div>
+            <div class="form-group mb-30">
+                <p>Nhà hàng hải sản Biển Cua</p>
+                <p>Địa chỉ: 89 Nguyễn Khang - Cầu Giấy</p>
+                <p>Hotline: 0911 35 35 99</p>
+                <p>FB: facebook.com/gakhongloithoat89NguyenKhang</p>
+            </div>
+            <div class="form-group mb-30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0793849120155!2d105.79820451493265!3d21.02950938599796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab43fd4a12df%3A0x2f5e69d14dcac8e0!2zODkgTmd1eeG7hW4gS2hhbmcsIFnDqm4gSG_DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1608365531613!5m2!1svi!2s" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0004_grap-food.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0003_gojek.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0002_now.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0001_pasgo-logo.png" />
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!-- Button trigger modal -->
+
+    @Scripts.Render("~/library/js")
+
+    <!-- Load Scripts -->
+    @*<script src="/_themes/fontend/js/jquery-3.4.1.min.js"></script>*@
+    @*<script src="/_themes/fontend/js/bootstrap.min.js"></script>*@
+    <script src="/_themes/fontend/js/counter.js"></script>
+    <script src="/_themes/fontend/js/anime.min.js"></script>
+    <script src="/_themes/fontend/js/aos.js"></script>
+    <script src="/_themes/fontend/js/magnific-popup.js"></script>
+    <script src="/_themes/fontend/js/owl.carousel.min.js"></script>
+    <script src="/_themes/fontend/js/infinite-scroll.pkgd.min.js"></script>
+    <script src="/_themes/fontend/js/isotope.pkgd.min.js"></script>
+    <script src="/_themes/fontend/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/_themes/fontend/js/parallax.js"></script>
+    <script src="/_themes/fontend/js/single-page-nav.js"></script>
+    <script src="/_themes/fontend/js/custom.js"></script>
+
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(function () {
+            $(document).on("click", "img[data-imgshow='true']", function () {
+                var title = $(this).attr('alt');
+                var src = $(this).attr('src');
+                var price = $(this).data('price');
+                $('#modalLiveImage').attr("src", src);
+                $('#modalLiveTitle').html(title);
+                $('#modalLivePrice').html(LibCurrencies.FormatToCurrency(price) + " đ");
+                $('#modalLiveSummary').html(title);
+                //
+                setTimeout(function () {
+                    $("#showModalLive").modal();
+                }, 300);
+
+            });
+        });
+    </script>
+</body>
+</html>
