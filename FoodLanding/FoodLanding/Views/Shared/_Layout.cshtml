@@ -26,9 +26,7 @@
             string userId = Helper.Current.UserLogin.IdentifierID;
         }*@
 </head>
-<body class="dark-theme">
-
-    <!-- Preloader -->
+<body>
     <div id="preloader">
         <div id="status">
             <div class="centered">
@@ -37,15 +35,15 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
+
     <div class="modal fade" id="showModalLive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="padding-top:15px; color:#000000" class="modal-title" id="modalLiveTitle">....</h4>
+                    <h4 style="color:#000000" class="modal-title" id="modalLiveTitle">....</h4>
                 </div>
-                <div class="modal-body" style="background: url('/_themes/fontend/images/product/bg_popup.png'">
-                    <div class="form-group text-center" style="background:#ccc">
+                <div class="modal-body">
+                    <div class="text-center" style="background: url('/_themes/fontend/images/product/bg_popup.png') ,no-repeat center; background-size:cover; padding:15px; ">
                         <img id="modalLiveImage" style="margin:auto auto;" class="img-modal img-responsive" src="~/Files/default/00000000-0000-0000-0000-000000000000.gif" />
                     </div>
                     <div class="form-group" style="background: #FFF;padding: 15px;">
@@ -59,9 +57,10 @@
             </div>
         </div>
     </div>
+
     <main class="col-md-6 col-md-offset-3">
         <!-- Hero -->
-        <section id="hero" class="hero-style-3 d-flex" data-product="true" data-index="1">
+        <section id="hero" class="hero-style-3 " data-product="true" data-index="1">
             <div class="cubes d-none d-xl-block">
                 <img class="cube-1" src="/_themes/fontend/images/index-data/hero/cube1.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
                 <img class="cube-2" src="/_themes/fontend/images/index-data/hero/cube2.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
@@ -71,7 +70,7 @@
         @RenderBody()
         <footer id="footer" class="mt-30">
             <div class="row mb-30">
-                <div class="col-md-5 col-xs-5" data-aos="fade-left">
+                <div class="col-md-5 col-xs-5" data-aos="fade-right">
                     <img src="~/_themes/fontend/images/product/_0008_tin-nhan.png" class="img-responsive" />
                 </div>
                 <div class="col-md-7 col-xs-7" data-aos="fade-right">
@@ -88,17 +87,17 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0793849120155!2d105.79820451493265!3d21.02950938599796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab43fd4a12df%3A0x2f5e69d14dcac8e0!2zODkgTmd1eeG7hW4gS2hhbmcsIFnDqm4gSG_DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1608365531613!5m2!1svi!2s" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <img src="~/_themes/fontend/images/product/_0004_grap-food.png" />
+                <div class="col-xs-3">
+                    <img class="img-responsive" src="~/_themes/fontend/images/product/_0004_grap-food.png" />
                 </div>
-                <div class="col-md-3">
-                    <img src="~/_themes/fontend/images/product/_0003_gojek.png" />
+                <div class="col-xs-3">
+                    <img class="img-responsive" src="~/_themes/fontend/images/product/_0003_gojek.png" />
                 </div>
-                <div class="col-md-3">
-                    <img src="~/_themes/fontend/images/product/_0002_now.png" />
+                <div class="col-xs-3">
+                    <img class="img-responsive" src="~/_themes/fontend/images/product/_0002_now.png" />
                 </div>
-                <div class="col-md-3">
-                    <img src="~/_themes/fontend/images/product/_0001_pasgo-logo.png" />
+                <div class="col-xs-3">
+                    <img class="img-responsive" src="~/_themes/fontend/images/product/_0001_pasgo-logo.png" />
                 </div>
             </div>
         </footer>
