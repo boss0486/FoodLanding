@@ -72,6 +72,7 @@ E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\bin\System.Web.Webpages.R
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\bin\System.Web.Helpers.xml
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\bin\System.Web.Mvc.xml
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csprojAssemblyReference.cache
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csproj.CoreCompileInputs.cache
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csproj.CopyComplete
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.dll

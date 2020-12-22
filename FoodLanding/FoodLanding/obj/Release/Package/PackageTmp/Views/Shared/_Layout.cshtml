@@ -26,24 +26,26 @@
             string userId = Helper.Current.UserLogin.IdentifierID;
         }*@
 </head>
-<body>
-    @*<div id="preloader">
-            <div id="status">
-                <div class="centered">
-                    <div class="blob-1"></div>
-                    <div class="blob-2"></div>
-                </div>
-            </div>
-        </div>*@
+<body class="dark-theme">
 
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="centered">
+                <div class="blob-1"></div>
+                <div class="blob-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
     <div class="modal fade" id="showModalLive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="color:#000000" class="modal-title" id="modalLiveTitle">....</h4>
+                    <h4 style="padding-top:15px; color:#000000" class="modal-title" id="modalLiveTitle">....</h4>
                 </div>
-                <div class="modal-body">
-                    <div class="text-center" style="background: url('/_themes/fontend/images/product/bg_popup.png') ,no-repeat center; background-size:cover; padding:15px; ">
+                <div class="modal-body" style="background: url('/_themes/fontend/images/product/bg_popup.png'">
+                    <div class="form-group text-center" style="background:#ccc">
                         <img id="modalLiveImage" style="margin:auto auto;" class="img-modal img-responsive" src="~/Files/default/00000000-0000-0000-0000-000000000000.gif" />
                     </div>
                     <div class="form-group" style="background: #FFF;padding: 15px;">
@@ -57,115 +59,69 @@
             </div>
         </div>
     </div>
-
     <main class="col-md-6 col-md-offset-3">
-        <div class="pyro"><div class="before"></div><div class="after"></div></div>
-        <div class="row">
-            <div class="container-fluid">
-                <!-- Hero -->
-                <section id="hero" class="hero-style-3 mgb-15" data-product="true" data-index="1">
-                    @*<div class="cubes d-none d-xl-block">
-                            <img class="cube-1" src="/_themes/fontend/images/index-data/hero/cube1.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
-                            <img class="cube-2" src="/_themes/fontend/images/index-data/hero/cube2.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
-                        </div>*@
-                    <img src="~/_themes/fontend/images/product/banner-1.png" class="img-responsive" alt="Gà không lối thoát, 89 nguyễn khang !" />
-                </section>
-                @RenderBody()
-                <footer id="footer" class="mt-30">
-                    <div class="form-group mb-30">
-                        <h3 style="color:white">Liên hệ đặt hàng</h3>
-                        <hr />
-                    </div>
-                    <div class="form-group mb-30">
-                        <p>Công ty THHH Ẩm Thực Tuổi Trẻ</p>
-                        <p>Địa chỉ: 89 Nguyễn Khang - Cầu Giấy</p>
-                        <p>Hotline: 0911 35 35 99</p>
-                        <p>FB: facebook.com/gakhongloithoat89NguyenKhang</p>
-                    </div>
-                    <div class="form-group mb-30">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0793849120155!2d105.79820451493265!3d21.02950938599796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab43fd4a12df%3A0x2f5e69d14dcac8e0!2zODkgTmd1eeG7hW4gS2hhbmcsIFnDqm4gSG_DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1608365531613!5m2!1svi!2s" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    <div class="form-group mb-30">
-                        <img src="~/_themes/fontend/images/background/chung-nhan-ve-sinh-an-toan-thuc-pham.png" class="img-responsive" />
-                    </div>
-                    <div class="form-group mb-30">
-                        <div class="row">
-
-                            <div class="col-xs-3">
-                                <img class="img-responsive" src="~/_themes/fontend/images/product/_0004_grap-food.png" />
-                            </div>
-                            <div class="col-xs-3">
-                                <img class="img-responsive" src="~/_themes/fontend/images/product/_0003_gojek.png" />
-                            </div>
-                            <div class="col-xs-3">
-                                <img class="img-responsive" src="~/_themes/fontend/images/product/_0002_now.png" />
-                            </div>
-                            <div class="col-xs-3">
-                                <img class="img-responsive" src="~/_themes/fontend/images/product/_0001_pasgo-logo.png" />
-                            </div>
-                        </div>
-                    </div>
-
-                </footer>
-
-                @*<div class="wrapper">
-                        <div class="ring">
-                            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
-                                <div class="coccoc-alo-ph-circle"></div>
-                                <div class="coccoc-alo-ph-circle-fill"></div>
-                                <div class="coccoc-alo-ph-img-circle"></div>
-                            </div>
-                        </div>
-                    </div>*@
+        <!-- Hero -->
+        <section id="hero" class="hero-style-3 d-flex" data-product="true" data-index="1">
+            <div class="cubes d-none d-xl-block">
+                <img class="cube-1" src="/_themes/fontend/images/index-data/hero/cube1.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
+                <img class="cube-2" src="/_themes/fontend/images/index-data/hero/cube2.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
             </div>
-        </div>
-
-        <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-        </div>
-
-        <div class="back-to-top">
-            <a class="backToTop" href="#hero"><i class="fas fa-chevron-up"></i></a>
-        </div>
-
-    </main>
-    <div class="container-fluid contact-show">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="row">
-                    <div class="col-md-6 col-xs-6">
-                        <div class="fix-button " style="background: #2196F3;">
-                            <a href="https://m.me/gakhongloithoat89NguyenKhang" target="_blank" class="meg"><i class="fab fa-facebook-messenger"></i> Gửi tin nhắn</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-6">
-                        <div class="fix-button " style="background:#F00;">
-                            <a class="phone" href="tel:0911355599" title="Gọi 0911355599" id="floating-phone">
-                                <i class="fas fa-phone-volume"></i> 0911 35 55 99
-                            </a>
-                        </div>
-                    </div>
+            <img src="~/_themes/fontend/images/product/banner-1.png" class="img-responsive" alt="Gà không lối thoát, 89 nguyễn khang !" />
+        </section>
+        @RenderBody()
+        <footer id="footer" class="mt-30">
+            <div class="row mb-30">
+                <div class="col-md-5 col-xs-5" data-aos="fade-left">
+                    <img src="~/_themes/fontend/images/product/_0008_tin-nhan.png" class="img-responsive" />
+                </div>
+                <div class="col-md-7 col-xs-7" data-aos="fade-right">
+                    <img src="~/_themes/fontend/images/product/_0007_so-dt.png" class="img-responsive" />
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="form-group mb-30">
+                <p>Nhà hàng hải sản Biển Cua</p>
+                <p>Địa chỉ: 89 Nguyễn Khang - Cầu Giấy</p>
+                <p>Hotline: 0911 35 35 99</p>
+                <p>FB: facebook.com/gakhongloithoat89NguyenKhang</p>
+            </div>
+            <div class="form-group mb-30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0793849120155!2d105.79820451493265!3d21.02950938599796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab43fd4a12df%3A0x2f5e69d14dcac8e0!2zODkgTmd1eeG7hW4gS2hhbmcsIFnDqm4gSG_DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1608365531613!5m2!1svi!2s" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0004_grap-food.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0003_gojek.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0002_now.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="~/_themes/fontend/images/product/_0001_pasgo-logo.png" />
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!-- Button trigger modal -->
+
     @Scripts.Render("~/library/js")
-    @Scripts.Render("~/fontend/js")
+
     <!-- Load Scripts -->
     @*<script src="/_themes/fontend/js/jquery-3.4.1.min.js"></script>*@
     @*<script src="/_themes/fontend/js/bootstrap.min.js"></script>*@
-
+    <script src="/_themes/fontend/js/counter.js"></script>
+    <script src="/_themes/fontend/js/anime.min.js"></script>
+    <script src="/_themes/fontend/js/aos.js"></script>
+    <script src="/_themes/fontend/js/magnific-popup.js"></script>
+    <script src="/_themes/fontend/js/owl.carousel.min.js"></script>
+    <script src="/_themes/fontend/js/infinite-scroll.pkgd.min.js"></script>
+    <script src="/_themes/fontend/js/isotope.pkgd.min.js"></script>
+    <script src="/_themes/fontend/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/_themes/fontend/js/parallax.js"></script>
+    <script src="/_themes/fontend/js/single-page-nav.js"></script>
+    <script src="/_themes/fontend/js/custom.js"></script>
 
     @RenderSection("scripts", required: false)
     <script type="text/javascript">
@@ -174,13 +130,10 @@
                 var title = $(this).attr('alt');
                 var src = $(this).attr('src');
                 var price = $(this).data('price');
-                var parentElm = $(this).closest("div");
-                var content = $(parentElm).find(".content").html();
-
                 $('#modalLiveImage').attr("src", src);
                 $('#modalLiveTitle').html(title);
                 $('#modalLivePrice').html(LibCurrencies.FormatToCurrency(price) + " đ");
-                $('#modalLiveSummary').html(content);
+                $('#modalLiveSummary').html(title);
                 //
                 setTimeout(function () {
                     $("#showModalLive").modal();
