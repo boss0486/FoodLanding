@@ -118,6 +118,7 @@
     <Content Include="Web.config" />
     <Content Include="_themes\fontend\css\style-data.css" />
     <Content Include="_themes\fontend\images\background\background-home.png" />
+    <Content Include="_themes\fontend\images\background\chung-nhan-ve-sinh-an-toan-thuc-pham.png" />
     <Content Include="_themes\fontend\images\index-data\about\about-image.png" />
     <Content Include="_themes\fontend\images\index-data\cta\quote.png" />
     <Content Include="_themes\fontend\images\index-data\divider.png" />
@@ -683,6 +684,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\HelperSecurity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

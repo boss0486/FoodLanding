@@ -33,7 +33,7 @@ namespace WebApplication
             // font end #########################################################################################################################################################################
             bundles.Add(new StyleBundle("~/fontend/css").Include(
                  "~/_themes/fontend/css/style-data.css"
-                 
+
                 ));
             // back end #########################################################################################################################################################################
             bundles.Add(new StyleBundle("~/backend/css").Include(
@@ -64,8 +64,20 @@ namespace WebApplication
                 "~/_themes/library/plugins/file-manage/file-manage.js",
                  "~/Library/Script/model-form.js"
             ));
-
-
+            bundles.Add(new ScriptBundle("~/fontend/js").Include(
+                 "~/_themes/fontend/js/counter.js",
+                 "~/_themes/fontend/js/counter.js",
+                 "~/_themes/fontend/js/anime.min.js",
+                 "~/_themes/fontend/js/aos.js",
+                 "~/_themes/fontend/js/magnific-popup.js",
+                 "~/_themes/fontend/js/owl.carousel.min.js",
+                 "~/_themes/fontend/js/infinite-scroll.pkgd.min.js",
+                 "~/_themes/fontend/js/isotope.pkgd.min.js",
+                 "~/_themes/fontend/js/imagesloaded.pkgd.min.js",
+                 "~/_themes/fontend/js/parallax.js",
+                 "~/_themes/fontend/js/single-page-nav.js",
+                 "~/_themes/fontend/js/custom.js"
+            ));
             bundles.Add(new ScriptBundle("~/manage/js").Include(
 
             //<!-- Jquery CountTo Plugin Js -->
@@ -145,7 +157,8 @@ namespace WebApplication
                // loading
                "~/_themes/library/plugins/loading/loading.js"
            ));
-            //BundleTable.EnableOptimizations = true;
-        }
+            BundleTable.EnableOptimizations = true;
+        } 
+
     }
 }

@@ -1,8 +1,9 @@
-﻿<!-- Services -->
+﻿@using Helper.Security
+<!-- Services -->
 <!-- Button trigger modal -->
 <section class="skills mgb-15">
     <div data-product="true" data-index="1">
-        <img class="img-responsive" src="~/_themes/fontend/images/product/_0024_met-ga-5-mon.png" alt="Mẹt gà 5 món !" data-imgshow="true" data-price="335000" />
+        <img class="img-responsive" src='@Library.IMGCaching("/_themes/fontend/images/product/_0024_met-ga-5-mon.png")' alt="Mẹt gà 5 món !" data-imgshow="true" data-price="335000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -24,14 +25,14 @@
         </div>
     </div>
     @*<div class="d-none d-xl-block">
-            <img class="services-cube" src="/_themes/fontend/images/index-data/hero/big-cube.png" alt="Mẹt gà 5 món !">
+            <img class="services-cube" src='@Library.IMGCaching("/_themes/fontend/images/index-data/hero/big-cube.png")' alt="Mẹt gà 5 món !">
         </div>*@
 
 </section>
 <!-- Skills -->
 <section class="skills mgb-15">
     <div class="" data-aos="fade-right" data-aos-delay="400">
-        <img src="/_themes/fontend/images/product/_0023_ga-khong-loi-thoat.png" class="img-responsive" alt="Gà không lối thoát !" data-imgshow="true" data-price="260000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0023_ga-khong-loi-thoat.png")' class="img-responsive" alt="Gà không lối thoát !" data-imgshow="true" data-price="260000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -56,7 +57,7 @@
 
 <section class="skills mgb-15">
     <div class="" data-aos="" data-aos-delay="400">
-        <img src="/_themes/fontend/images/product/_0022_met-ga-7-mon.png" alt="Mẹt gà 7 món !" class="img-responsive" data-imgshow="true" data-price="499000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0022_met-ga-7-mon.png")' alt="Mẹt gà 7 món !" class="img-responsive" data-imgshow="true" data-price="499000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -83,7 +84,7 @@
 </section>
 <section class="skills mgb-15">
     <div class="" data-aos="" data-aos-delay="400">
-        <img src="/_themes/fontend/images/product/_0021_met-ga-dong-cao.png" alt="Mẹt gà đông cảo !" class="img-responsive" data-imgshow="true" data-price="699000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0021_met-ga-dong-cao.png")' alt="Mẹt gà đông cảo !" class="img-responsive" data-imgshow="true" data-price="699000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -110,7 +111,7 @@
 
 <section class="skills">
     <div class="mgb-15" data-aos="" data-aos-delay="400">
-        <img src="/_themes/fontend/images/product/_0018_ga-quay-lu.png" alt="Mẹt gà quay lu !" class="img-responsive" data-imgshow="true" data-price="350000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0018_ga-quay-lu.png")' alt="Mẹt gà quay lu !" class="img-responsive" data-imgshow="true" data-price="350000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -130,7 +131,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 mgb-15" data-aos="" data-aos-delay="400">
-            <img src="/_themes/fontend/images/product/_0019_ga-hap-muoi.png" alt="Gà hấp muối !" class="img-responsive" data-imgshow="true" data-price="250000" />
+            <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0019_ga-hap-muoi.png")' alt="Gà hấp muối !" class="img-responsive" data-imgshow="true" data-price="250000" />
             <div class="content" style="display:none;">
                 <p class="info">
                     <b class="">- Chi tiết sản phẩm:</b><br />
@@ -147,8 +148,8 @@
                 </p>
             </div>
         </div>
-        <div class="col-md-6 mgb-15" data-aos="" data-aos-delay="500">
-            <img src="/_themes/fontend/images/product/_0020_chim-cau-quay.png" alt="Chim câu quay !" class="img-responsive" data-imgshow="true" data-price="150000" />
+        <div class="col-md-6 mgb-15" data-aos="" data-aos-delay="400">
+            <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0020_chim-cau-quay.png")' alt="Chim câu quay !" class="img-responsive" data-imgshow="true" data-price="150000" />
             <div class="content" style="display:none;">
                 <p class="info">
                     <b class="">- Chi tiết sản phẩm:</b><br />
@@ -169,7 +170,7 @@
 </section>
 <section class="skills">
     <div class="mgb-15">
-        <img src="/_themes/fontend/images/product/_0015_xoi-chim-bo-cau.png" class="img-responsive" alt="Xôi chim bồ câu !" data-imgshow="true" data-price="150000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0015_xoi-chim-bo-cau.png")' class="img-responsive" alt="Xôi chim bồ câu !" data-imgshow="true" data-price="150000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -190,7 +191,7 @@
     <div>
         <div class="row">
             <div class="col-md-6 mgb-15" data-aos="fade-right" data-aos-delay="400">
-                <img src="~/_themes/fontend/images/product/_0016_khoai-chien.png" alt="Khoai chiên !" class="img-responsive" data-imgshow="true" data-price="45000" />
+                <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0016_khoai-chien.png")' alt="Khoai chiên !" class="img-responsive" data-imgshow="true" data-price="45000" />
                 <div class="content" style="display:none;">
                     <p class="info">
                         <b class="">- Chi tiết sản phẩm:</b><br />
@@ -208,8 +209,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 mgb-15" data-aos="" data-aos-delay="500">
-                <img src="~/_themes/fontend/images/product/_0017_ngo-chien.png" alt="Ngô chiên !" class="img-responsive" data-imgshow="true" data-price="45000" />
+            <div class="col-md-6 mgb-15" data-aos="" data-aos-delay="400">
+                <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0017_ngo-chien.png")' alt="Ngô chiên !" class="img-responsive" data-imgshow="true" data-price="45000" />
                 <div class="content" style="display:none;">
                     <p class="info">
                         <b class="">- Chi tiết sản phẩm:</b><br />
@@ -233,7 +234,7 @@
 <section id="hero" class="hero-style-3" data-product="true" data-index="1">
     <div class="row">
         <div class="col-md-6 mgb-15">
-            <img src="~/_themes/fontend/images/product/_0009_ga-rang-muoi.png" alt="Gà rang muối !" class="img-responsive" data-imgshow="true" data-price="350000" />
+            <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0009_ga-rang-muoi.png")' alt="Gà rang muối !" class="img-responsive" data-imgshow="true" data-price="350000" />
             <div class="content" style="display:none;">
                 <p class="info">
                     <b class="">- Chi tiết sản phẩm:</b><br />
@@ -252,7 +253,7 @@
         </div>
         <div class="col-md-6">
             <div class="  mgb-15">
-                <img src="~/_themes/fontend/images/product/_0010_nom-chan-ga-rut-xuong.png" alt="Nộm chân gà rút xương !" class="img-responsive" data-imgshow="true" data-price="100000" />
+                <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0010_nom-chan-ga-rut-xuong.png")' alt="Nộm chân gà rút xương !" class="img-responsive" data-imgshow="true" data-price="100000" />
                 <div class="content" style="display:none;">
                     <p class="info">
                         <b class="">- Chi tiết sản phẩm:</b><br />
@@ -271,7 +272,7 @@
                 </div>
             </div>
             <div class="  mgb-15">
-                <img src="~/_themes/fontend/images/product/_0011_chan-ga-rang-muoi.png" alt="Chân gà rang muối !" class="img-responsive" data-imgshow="true" data-price="105000" />
+                <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0011_chan-ga-rang-muoi.png")' alt="Chân gà rang muối !" class="img-responsive" data-imgshow="true" data-price="105000" />
                 <div class="content" style="display:none;">
                     <p class="info">
                         <b class="">- Chi tiết sản phẩm:</b><br />
@@ -295,7 +296,7 @@
 
 <section id="hero" class="hero-style-3 mgb-15" data-product="true" data-index="1">
     <div class="">
-        <img src="~/_themes/fontend/images/product/_0012_trang-trung-non-xao.png" class="img-responsive" alt="Tràng trứng non xào !" data-imgshow="true" data-price="150000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0012_trang-trung-non-xao.png")' class="img-responsive" alt="Tràng trứng non xào !" data-imgshow="true" data-price="150000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -316,7 +317,7 @@
 
 <section class="skills mgb-15">
     <div class="" data-aos="" data-aos-delay="400">
-        <img src="~/_themes/fontend/images/product/_0013_lau-ga-nam.png" alt="Lẩu gà nấm !" class="img-responsive" data-imgshow="true" data-price="350000" />
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0013_lau-ga-nam.png")' alt="Lẩu gà nấm !" class="img-responsive" data-imgshow="true" data-price="350000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
@@ -340,8 +341,8 @@
     </div>
 </section>
 <section class="skills mgb-15">
-    <div class="" data-aos="fade-right" data-aos-delay="500">
-        <img src="~/_themes/fontend/images/product/_0014_lau-cua-ga.png" alt="Lẩu cua gà !" class="img-responsive" data-imgshow="true" data-price="550000" />
+    <div class="" data-aos="fade-right" data-aos-delay="400">
+        <img src='@Library.IMGCaching("/_themes/fontend/images/product/_0014_lau-cua-ga.png")' alt="Lẩu cua gà !" class="img-responsive" data-imgshow="true" data-price="550000" />
         <div class="content" style="display:none;">
             <p class="info">
                 <b class="">- Chi tiết sản phẩm:</b><br />
