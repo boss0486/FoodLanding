@@ -14145,7 +14145,7 @@ footer {
     width: 100%;
 }
 
-    footer p {
+    footer p, footer .f-title {
         font-size: 28px;
         color: #FFF;
         line-height: 1.499;
@@ -14181,6 +14181,7 @@ footer {
 
 img[data-imgshow="true"] {
     cursor: pointer;
+    pointer-events: auto;
 }
 
 
@@ -14236,8 +14237,12 @@ img[data-imgshow="true"] {
 
 
 @media screen and (max-width: 768px) {
-    footer p {
+    footer .f-title {
         font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 
     .contact-show .fix-button {

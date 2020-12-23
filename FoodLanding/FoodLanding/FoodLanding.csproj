@@ -109,6 +109,7 @@
     <Content Include="Files\log\Log-2019-05.txt" />
     <Content Include="Files\upload\voucher_template\vtemp-01.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Library\Script\model-form.js" />
     <Content Include="Pages\forbidden.html" />
     <Content Include="Pages\mail.html" />
@@ -118,6 +119,7 @@
     <Content Include="Web.config" />
     <Content Include="_themes\fontend\css\style-data.css" />
     <Content Include="_themes\fontend\images\background\background-home.png" />
+    <Content Include="_themes\fontend\images\background\chung-nhan-ve-sing-an-toan-thuc-pham.png" />
     <Content Include="_themes\fontend\images\index-data\about\about-image.png" />
     <Content Include="_themes\fontend\images\index-data\cta\quote.png" />
     <Content Include="_themes\fontend\images\index-data\divider.png" />
@@ -462,7 +464,7 @@
     <Content Include="_themes\library\plugins\toastr\toastr.min.css" />
     <Content Include="_themes\library\plugins\toastr\toastr.min.js" />
     <Content Include="_themes\library\script\event.js" />
-    <Content Include="_themes\library\script\jquery-3.2.1.js" />
+    <Content Include="_themes\library\plugins\jquery\jquery-3.2.1.js" />
     <Content Include="_themes\library\script\jquery.inputmask.bundle.min.js" />
     <Content Include="_themes\library\script\library.js" />
     <Content Include="_themes\library\script\notifies.js" />

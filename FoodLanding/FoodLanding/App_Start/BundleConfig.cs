@@ -33,7 +33,7 @@ namespace WebApplication
             // font end #########################################################################################################################################################################
             bundles.Add(new StyleBundle("~/fontend/css").Include(
                  "~/_themes/fontend/css/style-data.css"
-                 
+
                 ));
             // back end #########################################################################################################################################################################
             bundles.Add(new StyleBundle("~/backend/css").Include(
@@ -50,19 +50,36 @@ namespace WebApplication
              "~/_themes/manage/css/themes/all-themes.css"
             ));
             bundles.Add(new ScriptBundle("~/library/jquery").Include(
-                "~/_themes/library/plugins/jquery/jquery.min.js",
-                "~/_themes/library/plugins/bootstrap/js/bootstrap.js",
-                "~/_themes/library/plugins/cookie/jquery.cookie.js",
-                "~/_themes/library/plugins/tinymce/tinymce.min.js",
-                "~/_themes/library/plugins/tinymce/editors.js",
-                // forms   
-                "~/_themes/library/plugins/jquery-slimscroll/jquery.slimscroll.js",
-                "~/_themes/library/plugins/datepickers/bootstrap/bootstrap-datepicker.min.js",
-                "~/_themes/library/plugins/bootstrap-datepicker/js/bootstrap-datepicker.language.js",
-                "~/_themes/library/plugins/bootstrap-select/js/bootstrap-select.js",
-                "~/_themes/library/plugins/node-waves/waves.js",
-                "~/_themes/library/plugins/file-manage/file-manage.js",
-                 "~/Library/Script/model-form.js"
+                "~/_themes/library/plugins/jquery/jquery.js",
+                "~/_themes/library/plugins/bootstrap/js/bootstrap.min.js"
+            //"~/_themes/library/plugins/cookie/jquery.cookie.js",
+            //"~/_themes/library/plugins/tinymce/tinymce.min.js",
+            //"~/_themes/library/plugins/tinymce/editors.js",
+            //// forms   
+            //"~/_themes/library/plugins/jquery-slimscroll/jquery.slimscroll.js",
+            //"~/_themes/library/plugins/datepickers/bootstrap/bootstrap-datepicker.min.js",
+            //"~/_themes/library/plugins/bootstrap-datepicker/js/bootstrap-datepicker.language.js",
+            //"~/_themes/library/plugins/bootstrap-select/js/bootstrap-select.js",
+            //"~/_themes/library/plugins/node-waves/waves.js",
+            //"~/_themes/library/plugins/file-manage/file-manage.js",
+            // "~/Library/Script/model-form.js"
+            ));
+
+            bundles.Add(new ScriptBundle("~/fontend/js").Include(
+                "~/_themes/library/plugins/jquery/jquery.js",
+                "~/_themes/library/plugins/bootstrap/js/bootstrap.min.js",
+                "~/_themes/library/script/library.js",
+                "~/_themes/fontend/js/counter.js",
+                "~/_themes/fontend/js/anime.min.js",
+                "~/_themes/fontend/js/aos.js",
+                "~/_themes/fontend/js/magnific-popup.js",
+                "~/_themes/fontend/js/owl.carousel.min.js",
+                "~/_themes/fontend/js/infinite-scroll.pkgd.min.js",
+                "~/_themes/fontend/js/isotope.pkgd.min.js",
+                "~/_themes/fontend/js/imagesloaded.pkgd.min.js",
+                "~/_themes/fontend/js/parallax.js",
+                "~/_themes/fontend/js/single-page-nav.js",
+                "~/_themes/fontend/js/custom.js"
             ));
 
 
@@ -141,7 +158,7 @@ namespace WebApplication
                // all site
                "~/_themes/library/script/_script.js",
                // event
-               "~/_themes/library/script/event.js",
+               //"~/_themes/library/script/event.js",
                // loading
                "~/_themes/library/plugins/loading/loading.js"
            ));
