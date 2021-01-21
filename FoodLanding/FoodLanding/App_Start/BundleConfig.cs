@@ -32,8 +32,9 @@ namespace WebApplication
             ));
             // font end #########################################################################################################################################################################
             bundles.Add(new StyleBundle("~/fontend/css").Include(
-                 "~/_themes/fontend/css/style-data.css"
-
+                  "~/_themes/library/plugins/owlcarousel/assets/owl.carousel.min.css",
+                  "~/_themes/library/plugins/lightbox/css/lightbox.min.css",
+                  "~/_themes/fontend/css/style.css"
                 ));
             // back end #########################################################################################################################################################################
             bundles.Add(new StyleBundle("~/backend/css").Include(
@@ -51,7 +52,7 @@ namespace WebApplication
             ));
             bundles.Add(new ScriptBundle("~/library/jquery").Include(
                 "~/_themes/library/plugins/jquery/jquery.js",
-                "~/_themes/library/plugins/bootstrap/js/bootstrap.min.js"
+                "~/_themes/library/plugins/bootstrap/js/bootstrap.js"
             //"~/_themes/library/plugins/cookie/jquery.cookie.js",
             //"~/_themes/library/plugins/tinymce/tinymce.min.js",
             //"~/_themes/library/plugins/tinymce/editors.js",
@@ -66,20 +67,17 @@ namespace WebApplication
             ));
 
             bundles.Add(new ScriptBundle("~/fontend/js").Include(
-                "~/_themes/library/plugins/jquery/jquery.js",
-                "~/_themes/library/plugins/bootstrap/js/bootstrap.min.js",
-                "~/_themes/library/script/library.js",
-                "~/_themes/fontend/js/counter.js",
-                "~/_themes/fontend/js/anime.min.js",
-                "~/_themes/fontend/js/aos.js",
-                "~/_themes/fontend/js/magnific-popup.js",
-                "~/_themes/fontend/js/owl.carousel.min.js",
-                "~/_themes/fontend/js/infinite-scroll.pkgd.min.js",
-                "~/_themes/fontend/js/isotope.pkgd.min.js",
-                "~/_themes/fontend/js/imagesloaded.pkgd.min.js",
-                "~/_themes/fontend/js/parallax.js",
-                "~/_themes/fontend/js/single-page-nav.js",
-                "~/_themes/fontend/js/custom.js"
+            "~/_themes/library/plugins/easing/easing.min.js",
+            "~/_themes/library/plugins/superfish/hoverIntent.js",
+            "~/_themes/library/plugins/superfish/superfish.min.js",
+            "~/_themes/library/plugins/wow/wow.min.js",
+            "~/_themes/library/plugins/waypoints/waypoints.min.js",
+            "~/_themes/library/plugins/counterup/counterup.min.js",
+            "~/_themes/library/plugins/owlcarousel/owl.carousel.min.js",
+            "~/_themes/library/plugins/lightbox/js/lightbox.min.js",
+            "~/_themes/library/plugins/isotope/isotope.pkgd.min.js",
+            "~/_themes/library/plugins/touchSwipe/jquery.touchSwipe.min.js",
+            "~/_themes/fontend/js/main.js"
             ));
 
 
