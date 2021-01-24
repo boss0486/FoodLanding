@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title </title>
+    <title>@ViewBag.Title</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-    @Styles.Render("~/library/css")
     @Styles.Render("~/fontend/css")
+    @Styles.Render("~/library/css")
     @Scripts.Render("~/library/jquery")
+
     @RenderSection("styles", required: false)
     @*@{
             // Get language in client
@@ -27,136 +27,15 @@
         }*@
 </head>
 <body>
-    @*<div id="preloader">
-            <div id="status">
-                <div class="centered">
-                    <div class="blob-1"></div>
-                    <div class="blob-2"></div>
-                </div>
-            </div>
-        </div>*@
 
-    <div class="modal fade" id="showModalLive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 style="color:#000000" class="modal-title" id="modalLiveTitle">....</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center" style="background: url('/_themes/fontend/images/product/bg_popup.png') ,no-repeat center; background-size:cover; padding:15px; ">
-                        <img id="modalLiveImage" style="margin:auto auto;" class="img-modal img-responsive" src="~/Files/default/00000000-0000-0000-0000-000000000000.gif" />
-                    </div>
-                    <div class="form-group" style="background: #FFF;padding: 15px;">
-                        <h4 class="modalLivePrice" style="color:#F00">Giá: <span id="modalLivePrice">....</span></h4>
-                        <p id="modalLiveSummary"></p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+        <div class="form-group"><img src="~/_themes/fontend/images/product/_0031_tieu-de.png" class="img-responsive" /></div>
+        @RenderBody()
+    </div> 
+   
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
 
-    <main class="col-md-6 col-md-offset-3">
-        <div class="pyro"><div class="before"></div><div class="after"></div></div>
-        <div class="row">
-            <div class="container-fluid">
-                <!-- Hero -->
-                <section id="hero" class="hero-style-3 mgb-15" data-product="true" data-index="1">
-                    @*<div class="cubes d-none d-xl-block">
-                            <img class="cube-1" src="/_themes/fontend/images/index-data/hero/cube1.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
-                            <img class="cube-2" src="/_themes/fontend/images/index-data/hero/cube2.png" alt="Gà không lối thoát, 89 nguyễn khang !" />
-                        </div>*@
-                    <img src="~/_themes/fontend/images/product/banner-1.png" class="img-responsive" alt="Gà không lối thoát, 89 nguyễn khang !" />
-                </section>
-                @RenderBody()
-                <footer id="footer" class="mt-30">
-                    <div class="form-group mb-30">
-                        <h3 style="color:white">Liên hệ đặt hàng</h3>
-                        <hr />
-                    </div>
-                    <div class="form-group mb-30">
-                        <h3 class="f-title">CÔNG TY TNHH ẨM THỰC TUỔI TRẺ</h3>
-                        <p>Địa chỉ: 89 Nguyễn Khang - Cầu Giấy</p>
-                        <p>Hotline: 0911 35 35 99</p>
-                        <p>FB:facebook.com/gakhongloithoat89NguyenKhang</p>
-                    </div>
-                    <div class="form-group mb-30">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0793849120155!2d105.79820451493265!3d21.02950938599796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab43fd4a12df%3A0x2f5e69d14dcac8e0!2zODkgTmd1eeG7hW4gS2hhbmcsIFnDqm4gSG_DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1608365531613!5m2!1svi!2s" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    <div class="form-group">
-                        <img src="~/_themes/fontend/images/background/chung-nhan-ve-sing-an-toan-thuc-pham.png" class="img-responsive" />
-                    </div>
-                    <div class="row mb-30">
-                        <div class="col-xs-3">
-                            <img class="img-responsive" src="~/_themes/fontend/images/product/_0004_grap-food.png" />
-                        </div>
-                        <div class="col-xs-3">
-                            <img class="img-responsive" src="~/_themes/fontend/images/product/_0003_gojek.png" />
-                        </div>
-                        <div class="col-xs-3">
-                            <img class="img-responsive" src="~/_themes/fontend/images/product/_0002_now.png" />
-                        </div>
-                        <div class="col-xs-3">
-                            <img class="img-responsive" src="~/_themes/fontend/images/product/_0001_pasgo-logo.png" />
-                        </div>
-                    </div>
-                    
-                </footer>
-
-                @*<div class="wrapper">
-                        <div class="ring">
-                            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
-                                <div class="coccoc-alo-ph-circle"></div>
-                                <div class="coccoc-alo-ph-circle-fill"></div>
-                                <div class="coccoc-alo-ph-img-circle"></div>
-                            </div>
-                        </div>
-                    </div>*@
-            </div>
-        </div>
-
-        <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-        </div>
-
-        <div class="back-to-top">
-            <a class="backToTop" href="#hero"><i class="fas fa-chevron-up"></i></a>
-        </div>
-
-    </main>
-    <div class="container-fluid contact-show">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="row">
-                    <div class="col-md-6 col-xs-6">
-                        <div class="fix-button " style="background: #2196F3;">
-                            <a href="https://m.me/gakhongloithoat89NguyenKhang" target="_blank" class="meg"><i class="fab fa-facebook-messenger"></i> Gửi tin nhắn</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-6">
-                        <div class="fix-button " style="background:#F00;">
-                            <a class="phone" href="tel:0911355599" title="Gọi 0911355599" id="floating-phone">
-                                <i class="fas fa-phone-volume"></i> 0911 35 55 99
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     @Scripts.Render("~/library/js")
     @Scripts.Render("~/fontend/js")
     @RenderSection("scripts", required: false)
