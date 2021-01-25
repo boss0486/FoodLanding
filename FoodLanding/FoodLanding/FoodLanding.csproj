@@ -935,10 +935,6 @@
     <Content Include="_themes\library\plugins\ionicons\fonts\ionicons.eot" />
     <Content Include="_themes\library\plugins\ionicons\fonts\ionicons.ttf" />
     <Content Include="_themes\library\plugins\ionicons\fonts\ionicons.woff" />
-    <Content Include="_themes\library\plugins\bootstrap\css\bootstrap-theme.css.map" />
-    <Content Include="_themes\library\plugins\bootstrap\css\bootstrap-theme.min.css.map" />
-    <Content Include="_themes\library\plugins\bootstrap\css\bootstrap.css.map" />
-    <Content Include="_themes\library\plugins\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="_themes\fontend\images\product\text.xlsx" />
     <Content Include="_themes\fonts\webfont\UTM Facebook K T.ttf" />
     <Content Include="_themes\fonts\webfont\UTM Davida.ttf" />

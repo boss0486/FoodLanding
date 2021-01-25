@@ -25,6 +25,17 @@
     src: url('../../fonts/webfont/UTM Azuki.ttf') format('truetype');
 }
 
+
+.container {
+    width: 1080px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1080px !important;
+    }
+}
+
 body {
     background: #fff;
     color: #666666;
