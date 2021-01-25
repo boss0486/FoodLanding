@@ -76,7 +76,6 @@ E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.c
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csproj.CopyComplete
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.dll
 E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.pdb
-E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csprojAssemblyReference.cache
 D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\bin\FoodLanding.dll.config
 D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\bin\FoodLanding.dll
 D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\bin\FoodLanding.pdb
@@ -156,3 +155,4 @@ D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.cspr
 D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csproj.CopyComplete
 D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.dll
 D:\Work\Project\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.pdb
+E:\STARCOM\PROJECT\FoodLanding\FoodLanding\FoodLanding\obj\Release\FoodLanding.csprojAssemblyReference.cache

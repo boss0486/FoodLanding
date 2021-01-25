@@ -2,35 +2,31 @@
 
 @font-face {
     font-family: 'UTM Facebook K T';
-    src: url('../../fonts/webfont/UTM Facebook K T.ttf') format('truetype');
+    src: url('/_themes/fonts/webfont/UTM Facebook K T.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'UTM Davida';
-    src: url('../../fonts/webfont/UTM Davida.ttf') format('truetype');
+    src: url('/_themes/fonts/webfont/UTM Davida.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'UTM Nokia';
-    src: url('../../fonts/webfont/UTM Nokia.ttf') format('truetype');
+    src: url('/_themes/fonts/webfont/webfont/UTM Nokia.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'UTM Nokia Standard';
-    src: url('../../fonts/webfont/UTM Nokia Standard.ttf') format('truetype');
+    src: url('/_themes/fonts/webfont/UTM Nokia Standard.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'UTM Azuki';
-    src: url('../../fonts/webfont/UTM Azuki.ttf') format('truetype');
-}
-
-
-.container {
-    width: 1080px;
+    src: url('/_themes/fonts/webfont/UTM Azuki.ttf') format('truetype');
 }
 
 @media (min-width: 1200px) {
+
     .container {
         width: 1080px !important;
     }
@@ -1963,24 +1959,21 @@ button:focus {
 }
 
 /* ################################################################################################### */
-.text-01 {
-    font-family: "UTM Facebook K T";
-    font-size: 45px;
-    text-transform: none;
-    color: #FF7200
-}
+
 
 .content-01 p {
     font-family: "UTM Facebook K T";
-    font-size: 36px;
+    font-size: 2.97em;
     text-transform: none;
     color: #FF7200;
     font-weight: normal;
+    margin: 0 0 0px;
+    line-height: 1.2em;
 }
 
 .content-01 .title-01 {
     font-family: "UTM Davida";
-    font-size: 36px;
+    font-size: 4.3rem;
     text-transform: none;
     color: #340000;
     font-weight: normal;
@@ -1998,7 +1991,7 @@ button:focus {
 }
 
 .product-01 .item-img {
-    background: url('../images/product/khungdoan.png') no-repeat center;
+    background: url('/_themes/fontend/images/product/khungdoan.png') no-repeat center;
     background-size: cover;
     text-align: center;
     padding: 10px;
@@ -2054,7 +2047,7 @@ button:focus {
     font-family: "UTM Nokia Standard";
     font-size: 21px;
     text-align: center;
-    background: url('../images/product/bangten.png') no-repeat;
+    background: url('/_themes/fontend/images/product/bangten.png') no-repeat;
     background-size: 100% auto;
     padding-top: 34px;
 }
@@ -2105,7 +2098,7 @@ button:focus {
     font-size: 82px;
     text-align: center;
     border: solid 2px #333;
-    border-radius:15px; 
+    border-radius: 15px;
 }
 
 .contact-01 {
@@ -2115,6 +2108,22 @@ button:focus {
     text-transform: none;
     color: #a60000;
     font-weight: normal;
+}
+.content-01 img, .content-02 img, .content-03 img {
+   margin: auto auto;
+}
+
+@media (max-width: 670px) {
+
+    .content-01 .title-01 {
+        font-size: 2.4rem;
+    }
+    .content-01 p {
+        font-size: 1.58rem;
+    }
+    .content-01 p:nth-last-child(-n+1) {
+         padding-bottom:20px;
+    }
 }
 /* ################################################################################################### */
 .mt-10 {
